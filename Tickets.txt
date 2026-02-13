@@ -1,0 +1,124 @@
+🎫 TICKET 53 — Gebruiker zoeken
+Beschrijving Zoek een gebruiker in een lijst.
+Doel Array search + ifelse
+
+Opdracht
+
+Array met usernames
+
+Vraag een username
+
+Als de naam in de array zit
+→ print “Gebruiker gevonden”
+anders
+→ “Gebruiker niet gevonden”
+
+🎫 TICKET 54 — Logregels sorteren op type
+Beschrijving Sorteer logs op type.
+Doel Array filter + meerdere arrays
+
+Opdracht
+
+Array met logregels (string)
+
+Maak drie arrays:
+
+errors
+
+warnings
+
+infos
+
+Stop elke regel in de juiste array en print ze.
+
+🎫 TICKET 55 — Gebruiker updaten
+Beschrijving Update een bestaande gebruiker.
+Doel Array + object + loop
+
+Opdracht
+
+Array van gebruikersobjecten
+(Username, Department)
+
+Vraag om een username en een nieuwe department.
+
+Zoek de gebruiker en update de department.
+
+Print de volledige array.
+
+🎫 TICKET 56 — Gemiddelde CPU belasting
+Beschrijving Bereken gemiddelde CPU.
+Doel Loop + rekenen
+
+Opdracht
+
+Array met CPU percentages (bijv. 40, 70, 90)
+
+Bereken en print het gemiddelde.
+
+🎫 TICKET 57 — Inactieve gebruikers verwijderen
+Beschrijving Verwijder alle inactieve users.
+Doel Array filter + object properties
+
+Opdracht
+
+Array van gebruikersobjecten
+(Username, Active)
+
+Maak een nieuwe array zonder inactieve gebruikers.
+
+Print de nieuwe lijst.
+
+🎫 TICKET 58 — Meest recente systeemcheck
+Beschrijving Zoek het laatst gecontroleerde systeem.
+Doel Object properties + vergelijken
+
+Opdracht
+
+Array van systemen
+(Name, LastChecked als getal of datumstring)
+
+Bepaal welk systeem het meest recent is gecontroleerd.
+
+Print de naam.
+
+🎫 TICKET 59 — Foutcodes rapport
+Beschrijving Maak een samenvatting van foutcodes.
+Doel Loop + object als teller
+
+Opdracht
+
+Array met foutcodes
+(bijv. [404, 500, 404, 403, 500])
+
+Maak een object:
+
+{
+  404: 2,
+  500: 2,
+  403: 1
+}
+
+Print het object.
+
+🎫 TICKET 60 — Toegang combineren met tijd én rol
+Beschrijving Controleer toegang met meerdere regels.
+Doel Ifelse + logische operatoren
+
+Opdracht
+
+Vraag:
+
+rol
+
+huidig uur (0–23)
+
+Regels:
+
+Admin → altijd toegang
+
+User → alleen tussen 9–17
+
+Guest → nooit toegang
+
+Print een duidelijke melding.
