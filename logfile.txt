@@ -1,0 +1,28 @@
+[200~2026-02-15 09:12:01,104 INFO  [main] Application started
+2026-02-15 09:12:01,221 INFO  [config] Configuration loaded from /etc/app/config.yml
+2026-02-15 09:12:02,015 INFO  [database] Connecting to database at db01.internal
+2026-02-15 09:12:02,487 INFO  [database] Connection established
+
+2026-02-15 09:12:05,102 INFO  [auth] Login attempt for user=john.doe
+2026-02-15 09:12:05,318 INFO  [auth] Login successful for user=john.doe
+
+2026-02-15 09:12:10,441 DEBUG [api] GET /api/v1/orders?limit=50
+2026-02-15 09:12:10,812 INFO  [api] 200 OK - 50 records returned
+
+2026-02-15 09:12:18,003 WARN  [cache] Cache miss for key=order_48291
+2026-02-15 09:12:18,229 INFO  [cache] Cache entry created for key=order_48291
+
+2026-02-15 09:12:25,774 ERROR [payment] Payment processing failed
+2026-02-15 09:12:25,775 ERROR [payment] Reason: connection timeout to payment provider
+
+2026-02-15 09:12:30,120 INFO  [scheduler] Daily cleanup job started
+2026-02-15 09:12:31,556 INFO  [scheduler] Removed 143 expired sessions
+2026-02-15 09:12:31,557 INFO  [scheduler] Daily cleanup job finished
+
+2026-02-15 09:12:40,901 DEBUG [metrics] cpu=37% mem=612MB threads=42
+2026-02-15 09:12:50,002 INFO  [main] Application running normally
+
+2026-02-15 09:13:05,413 INFO  [auth] Logout user=john.doe
+2026-02-15 09:13:05,414 INFO  [main] Shutdown requested
+2026-02-15 09:13:06,002 INFO  [database] Connection closed
+2026-02-15 09:13:06,120 INFO  [main] Application stopped~
