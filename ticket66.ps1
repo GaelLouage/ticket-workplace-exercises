@@ -1,18 +1,13 @@
 try {
-    $user = Read-Host("Enable user")
+    $sam = Read-Host "Geef SamAccountName van de gebruiker"
 
-    function Get-EnableUser(){
-        param([string]$user)
-            $userToEnable = Get-ADUser -Server DCLAB01 -Filter * | Where-Object {$_.Enabled -eq $false -and $_.SamAccountName -eq "Gael Louage"}
-            Enable-ADAccount $user
+    $user = Get-ADUser -Server DCLAB01 -Filter "SamAccountName -eq '$sam' -and Enabled -eq 'False'" -ErrorAction Stop
 
-    }
+    Enable-ADAccount -Identity $user -ErrorAction Stop
 
-    Get-EnableUser $user
-    Get-ADUser -Server DCLAB01 -Filter * | Where-Object {$_.SamAccountName -eq "GaelL"}
-} 
+    Write-Host "Gebruiker $($user.SamAccountName) is geactiveerd"
+
+}
 catch {
-
-    $_.Exception.Message
-    
+    Write-Error $_.Exception.Message
 }
